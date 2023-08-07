@@ -1,85 +1,80 @@
-body{
-    height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url("./math.jpg");
 }
 
-.calculator-frame{
-    width: 600px;
-    height: 700px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: rgb(67, 65, 65);
-    border-radius: 20px; 
+.calculator-frame {
+  width: 500px;
+  height: 700px;
+  border: 3px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(75, 7, 7);
+  border-radius: 20px;
+  box-shadow: 10px 10px rgb(0, 0, 0);
 }
 
-.screen{
-    margin: 10px 0px 10px 0px;
-    width: 580px;
-    height: 100px; 
-    border: 3px solid red;
-    background-color: white;
-    border-radius: 20px 20px 0px 0px;
+.screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px 20px 10px 0px;
+  font-size: 50px;
+  margin: 20px 0px 10px 0px;
+  width: 400px;
+  height: 100px;
+  border: 3px solid rgb(52, 3, 3);
+  background-color: rgb(63, 7, 7);
+  border-radius: 20px 20px 0px 0px;
+  color: white;
 }
 
-.body{
-    display: flex;
+.body {
+  display: flex;
 }
 
-p{
-    font-size: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 800;
-    color: white;
+p {
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 800;
+  color: white;
 }
 
-.numbers{
-    display: flex;
-    flex-wrap: wrap;
-    width: 350px; 
-    height: 470px;
-    justify-content: space-between;
-    padding:10px;
-    margin: 0px;
-    align-items: center;
-    
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+  height: 470px;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0px;
+  align-items: center;
 }
 
-.number{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:0px;
-    margin: 0px;
-    width:100px; 
-    height: 100px;
-    border: 1px solid black;
-    font-size: 20px; 
-    background-color: white;
-    border-radius: 20px; 
+.nbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 20px;
 }
 
-.operations{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 120px;
-    margin-left: 40px;
+.nbutton:hover {
+  background-color: rgb(198, 197, 197);
 }
-.operation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100px;
-    font-size: 20px; 
-    height: 100px;
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 20px;
+
+a {
+  text-decoration: none;
+  color: lightgreen;
 }
