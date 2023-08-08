@@ -10,6 +10,7 @@ const operationButtons = document.querySelectorAll(".operation");
 const clearButton = document.querySelector(".clear");
 const equalsButton = document.querySelector(".equals");
 const screen = document.querySelector(".screen")
+const soundEffect = document.getElementById('soundEffect');
 
 let currentInput = ''; // Store the current input
 
@@ -19,6 +20,7 @@ for (let i = 0; i < numberButtons.length; i++) {
     const numberText = numberButtons[i].textContent;
     currentInput += numberText;
     screen.textContent = currentInput;
+    soundEffect.play();
 
     //add some special style when the button is clicked
     numberButtons[i].style.cssText = "background-color: rgb(117, 85, 85); color: white;"
@@ -34,6 +36,7 @@ for (let i = 0; i < operationButtons.length; i++) {
     currentInput += ' ' + operationText + ' ';
     screen.textContent = currentInput;
 
+    soundEffect.play();
     //add some special style when the button is clicked
     operationButtons[i].style.cssText = "background-color: rgb(117, 85, 85); color: white;"
     setTimeout(() => {
@@ -47,6 +50,7 @@ clearButton.addEventListener('click', () => {
   currentInput = '';
   screen.textContent = '';
 
+  soundEffect.play();
   //add some special style when the button is clicked
   clearButton.style.cssText = "background-color: rgb(117, 85, 85); color: white;"
   setTimeout(() => {
@@ -54,11 +58,9 @@ clearButton.addEventListener('click', () => {
   }, 150);
 })
 
-
-
-
 // we finaly add an event listener to the equals button
 equalsButton.addEventListener('click', () => {
+  soundEffect.play();
   if (currentInput) {
     try {
       // calculate the result and show it on screen

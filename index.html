@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Tektur&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Tektur&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./index.js" defer></script>
     <title>Calculator</title>
@@ -16,6 +19,7 @@
         <div class="screen">0</div>
       </div>
       <div class="body">
+        <audio id="soundEffect" src="./click.mp3" preload="auto"></audio>
         <div class="numbers">
           <div class="nbutton number">1</div>
           <div class="nbutton number">2</div>
@@ -35,7 +39,12 @@
           <div class="nbutton operation divide">/</div>
         </div>
       </div>
-      <p>BY ACSEED | <a href="https://github.com/Acseed100/calculator" target="_blank">Source code</a></p>
+      <p>
+        BY ACSEED |
+        <a href="https://github.com/Acseed100/calculator" target="_blank"
+          >Source code</a
+        >
+      </p>
     </div>
   </body>
 </html>
